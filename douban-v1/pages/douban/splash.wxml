@@ -1,0 +1,6 @@
+<!--pages/douban/splash.wxml-->
+<swiper style="height: 100%;width: 100%;" indicator-dots>
+  <swiper-item wx:for="{{ subjects }}" wx:key="{{ item.id }}" style="flex: 1;">
+    <image src="{{ item.images.large }}" mode="aspectFill" style="position: absolute;height: 100%;width: 100%;opacity: .8;" />
+  </swiper-item>
+</swiper>
