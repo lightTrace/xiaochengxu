@@ -1,0 +1,33 @@
+<!--pages/douban/item.wxml-->
+<loading hidden="{{ !loading }}">加载中</loading>
+<image style="position: fixed;left: 0;top: 0;right: 0;bottom: 0;height: 100%;width: 100%;z-index: -1000;opacity: .05;" src="{{ movie.images.large }}" mode="aspectFill" />
+<scroll-view scroll-y>
+  <view class="weui-article">
+    <view class="weui-article__section">
+      <image class="weui-article__img" src="{{ movie.images.large }}" mode="aspectFit" style="width: 100%;height: 800rpx" />
+    </view>
+    <view class="weui-article__h1">{{ movie.title }}({{ movie.year }})</view>
+
+    <view class="weui-article__section">
+      <view class="weui-media-box__info" style="margin-top:10rpx;">
+        <view class="weui-media-box__info__meta">评分：{{ movie.rating.average }}</view>
+      </view>
+      <view class="weui-media-box__info" style="margin-top:10rpx;">
+        <view class="weui-media-box__info__meta">导演：
+          <block wx:for="{{ movie.directors }}" wx:key="{{ item.id }}"> {{ item.name }} </block>
+        </view>
+      </view>
+      <view class="weui-media-box__info" style="margin-top:10rpx;">
+        <view class="weui-media-box__info__meta">主演：
+          <block wx:for="{{ movie.casts }}" wx:key="{{ item.id }}"> {{ item.name }} </block>
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-article__section">
+      <view class="weui-article__p">
+        {{ movie.summary }}
+      </view>
+    </view>
+  </view>
+</scroll-view>
