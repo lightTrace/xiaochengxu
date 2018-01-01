@@ -1,7 +1,9 @@
-douban-v1ÊÇ»ùÓÚquickstart¸Ä¶¯ÊµÏÖ½øÈëappÏÔÊ¾ÈıÕÅÍ¼Æ¬µÄ¹¦ÄÜ ²©¿Í½²½âµØÖ·£ºhttp://blog.csdn.net/suresand/article/details/78942911
+douban-v1åŸºäºquickstartæ”¹åŠ¨å®ç°è¿›å…¥appæ˜¾ç¤ºä¸‰å¼ å›¾ç‰‡çš„åŠŸèƒ½ åšå®¢è®²è§£åœ°å€ï¼šhttp://blog.csdn.net/suresand/article/details/78942911
 
-douban-v2ÊÇÊµÏÖÒ³Ê×splashĞ§¹û£¬ÄÚÈİÊµÏÖ¿ÉÒÔ×óÓÒºáÏò»¬¶¯µÄ¹¦ÄÜ ²©¿Í½²½âµØÖ·£ºhttp://blog.csdn.net/sureSand/article/details/78945054
+douban-v2å®ç°é¡µé¦–splashæ•ˆæœï¼Œå†…å®¹å®ç°å¯ä»¥å·¦å³æ¨ªå‘æ»‘åŠ¨çš„åŠŸèƒ½ åšå®¢è®²è§£åœ°å€ï¼šhttp://blog.csdn.net/sureSand/article/details/78945054
 
-douban-v3ÊÇÊµÏÖÁĞ±íµ½ÏêÇéÒ³ÃæµÄÌø×ª ²©¿Í½²½âµØÖ·£ºhttp://blog.csdn.net/sureSand/article/details/78945668
+douban-v3å®ç°åˆ—è¡¨åˆ°è¯¦æƒ…é¡µé¢çš„è·³è½¬ åšå®¢è®²è§£åœ°å€ï¼šhttp://blog.csdn.net/sureSand/article/details/78945668
 
-douban-v4ÊÇÊµÏÖ¿ÉÉÏÏÂ¹ö¶¯µÄÁĞ±íÒ³ ²©¿Í½²½âµØÖ·£º
+douban-v4å®ç°å¯ä¸Šä¸‹æ»šåŠ¨çš„åˆ—è¡¨é¡µ åšå®¢è®²è§£åœ°å€ï¼šhttp://blog.csdn.net/suresand/article/details/78946621
+
+douban-v5å®ç°ä¸‹æ‹‰åˆ·æ–°å’Œæœç´¢ åšå®¢è®²è§£åœ°å€ï¼šhttp://blog.csdn.net/sureSand/article/details/78947472
