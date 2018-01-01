@@ -1,0 +1,32 @@
+<!--pages/douban/search.wxml-->
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" value="{{searchWords}}" focus="{{searchInputFocus}}" bindinput="onSearchInputType" />
+      <!--清空内容的icon-->
+      <view class="weui-icon-clear" wx:if="{{searchWords.length > 0}}" bindtap="clearSearchInput">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+    <label class="weui-search-bar__label" hidden="{{searchInputFocus}}" bindtap="showSearchInput">
+      <icon class="weui-icon-search" type="search" size="14"></icon>
+      <view class="weui-search-bar__text">搜索</view>
+    </label>
+  </view>
+<view class="weui-search-bar__cancel-btn" hidden="{{!searchInputFocus}}" bindtap="onTapSearchBtn">
+  <block wx:if="{{searchWords.length == 0}}">取消</block>
+  <block wx:else>搜索</block>
+</view>
+</view>
+<!--即时搜索词列表-->
+<view class="weui-cells searchbar-result" wx:if="{{wordsList.length > 0}}">
+  <navigator url="item?id={{item.id}}" wx:for="{{wordsList}}" wx:key="{{item.id}}" class="weui-cell" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">
+      <view>{{item.title}}</view>
+    </view>
+  </navigator>
+</view>
+
+<import src="list-template" />
+<template is="list-template" data="{{ movies,total,page }}" />

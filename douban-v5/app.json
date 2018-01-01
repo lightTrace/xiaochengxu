@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/douban/index",
+    "pages/douban/list",
+    "pages/douban/search",        
+    "pages/douban/splash",
+    "pages/douban/item",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "萌萌movie",
+    "navigationBarTextStyle":"black"
+  }
+}

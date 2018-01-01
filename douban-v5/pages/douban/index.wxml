@@ -1,0 +1,49 @@
+<!--pages/douban/index.wxml-->
+<swiper style="height:450rpx" indicator-dots autoplay="true" interval="5000" duration="1000">
+  <swiper-item wx:for="{{ boards[0].movies }}" wx:key="{{ item.id }}">
+    <navigator url="item?id={{item.id}}" hover-class="none">
+      <image style="height:450rpx;width:750rpx;" src="{{ item.images.large }}" mode="aspectFill" />
+    </navigator>
+  </swiper-item>
+</swiper>
+
+<view wx:for="{{ boards }}" wx:key="{{ item.key }}" class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">
+  {{ item.title }}
+  </view>
+
+  <view class="weui-panel__bd">
+    <view style="padding:10px" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <scroll-view scroll-x>
+        <view style="display:flex;">
+          <navigator url="item?id={{item.id}}" wx:for="{{ item.movies }}" wx:key="{{ item.id }}">
+            <view style="display:flex;flex-direction:column;width:180rpx;margin:10rpx;">
+              <image style="width:180rpx;height:250rpx;" src="{{ item.images.large }}" mode="aspectFill" />
+              <text style="text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:13px;padding-top:5rpx;">{{ item.title }}</text>
+            </view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="weui-panel__ft">
+    <navigator url="list?type={{item.key}}" class="weui-cell weui-cell_access weui-cell_link">
+      <view class="weui-cell__bd">更多</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view>
+</view>
+
+<view class="weui-search-bar" style="position: absolute;top:0;width:100%;opacity: .8;">
+  <navigator url="search" class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" />
+    </view>
+    <label class="weui-search-bar__label">
+      <icon class="weui-icon-search" type="search" size="14"></icon>
+      <view class="weui-search-bar__text">搜索</view>
+    </label>
+  </navigator>
+</view>
