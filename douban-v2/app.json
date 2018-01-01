@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/douban/index",
+    "pages/douban/splash",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
